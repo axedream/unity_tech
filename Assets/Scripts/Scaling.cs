@@ -8,12 +8,12 @@ public class ScaleCapsula : MonoBehaviour
 
     private float _currentScaleFactor = 1f;
 
-    void Start()
+    private void Start()
     {
         _initialScale = transform.localScale;
     }
 
-    void Update()
+    private void Update()
     {
         _currentScaleFactor += _speedScale * Time.deltaTime;
 
